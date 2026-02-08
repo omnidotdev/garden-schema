@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://garden.omni.dev/v1/slices/theme.schema.json",
+  "title": "Theme Slice",
+  "description": "Visual theming for garden rendering",
+  "type": "object",
+  "properties": {
+    "primaryColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Primary brand color"
+    },
+    "secondaryColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Secondary color"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Background color"
+    },
+    "textColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Text color"
+    }
+  },
+  "additionalProperties": false
+}
