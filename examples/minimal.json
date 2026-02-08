@@ -1,0 +1,7 @@
+{
+  "$schema": "https://garden.omni.dev/v1/garden.schema.json",
+  "version": "1.0.0",
+  "core": {
+    "name": "My Garden"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://garden.omni.dev/v1/garden.schema.json",
+  "version": "1.0.0",
+  "core": {
+    "name": "Omni",
+    "description": "Open-source tools for the modern web",
+    "version": "1.0.0"
+  },
+  "sprouts": [
+    {
+      "name": "Runa",
+      "homepageUrl": "https://runa.omni.dev",
+      "description": "Intelligent runtime"
+    },
+    {
+      "name": "Crystal",
+      "homepageUrl": "https://crystal.omni.dev",
+      "description": "Design system"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Brian",
+      "url": "https://github.com/omnidotdev"
+    }
+  ],
+  "theme": {
+    "primaryColor": "#6366F1",
+    "backgroundColor": "#0F172A"
+  },
+  "composition": {
+    "subgardens": [
+      {
+        "name": "Infra",
+        "url": "https://garden.omni.dev/infra"
+      }
+    ]
+  }
+}
