@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://garden.omni.dev/v1/garden.schema.json",
+  "title": "garden.json",
+  "description": "Ecosystem specification as a composable directed graph",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Schema URL for validation"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of this garden.json file"
+    },
+    "core": {
+      "$ref": "slices/core.schema.json",
+      "description": "Core identity"
+    },
+    "sprouts": {
+      "$ref": "slices/sprouts.schema.json",
+      "description": "Products and services"
+    },
+    "maintainers": {
+      "$ref": "slices/maintainers.schema.json",
+      "description": "Garden maintainers"
+    },
+    "theme": {
+      "$ref": "slices/theme.schema.json",
+      "description": "Visual theming"
+    },
+    "composition": {
+      "$ref": "slices/composition.schema.json",
+      "description": "Garden hierarchy"
+    }
+  },
+  "required": ["version", "core"],
+  "additionalProperties": false
+}
