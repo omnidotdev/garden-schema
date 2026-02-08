@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/slices/core.schema.json",
+  "$id": "https://garden.omni.dev/slices/core.schema.json",
   "title": "Core Slice",
   "description": "Core garden identity and metadata",
   "type": "object",

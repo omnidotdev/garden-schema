@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/slices/sprouts.schema.json",
+  "$id": "https://garden.omni.dev/slices/sprouts.schema.json",
   "title": "Sprouts Slice",
   "description": "Products and services in the garden",
   "type": "array",

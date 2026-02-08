@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/slices/maintainers.schema.json",
+  "$id": "https://garden.omni.dev/slices/maintainers.schema.json",
   "title": "Maintainers Slice",
   "description": "People who maintain the garden",
   "type": "array",

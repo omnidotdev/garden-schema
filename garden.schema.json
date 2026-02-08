@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/garden.schema.json",
+  "$id": "https://garden.omni.dev/garden.schema.json",
   "title": "garden.json",
   "description": "Ecosystem specification as a composable directed graph",
   "type": "object",

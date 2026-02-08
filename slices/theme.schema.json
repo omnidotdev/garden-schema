@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/slices/theme.schema.json",
+  "$id": "https://garden.omni.dev/slices/theme.schema.json",
   "title": "Theme Slice",
   "description": "Visual theming for garden rendering",
   "type": "object",

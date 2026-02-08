@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://garden.omni.dev/v1/slices/composition.schema.json",
+  "$id": "https://garden.omni.dev/slices/composition.schema.json",
   "title": "Composition Slice",
   "description": "Garden hierarchy via subgardens and supergardens",
   "type": "object",

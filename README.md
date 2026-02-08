@@ -5,14 +5,13 @@ JSON Schema specification for modeling ecosystems as composable directed graphs.
 ## Structure
 
 ```
-v1/
-├── garden.schema.json     # Root schema
-└── slices/
-    ├── core.schema.json         # Name, description, version, timestamps (required)
-    ├── sprouts.schema.json      # Products and services
-    ├── maintainers.schema.json  # Garden maintainers
-    ├── theme.schema.json        # Visual theming
-    └── composition.schema.json  # Subgardens, supergardens
+garden.schema.json          # Root schema
+slices/
+├── core.schema.json         # Name, description, version, timestamps (required)
+├── sprouts.schema.json      # Products and services
+├── maintainers.schema.json  # Garden maintainers
+├── theme.schema.json        # Visual theming
+└── composition.schema.json  # Subgardens, supergardens
 ```
 
 ## Slices
@@ -29,7 +28,7 @@ v1/
 
 ```json
 {
-  "$schema": "https://garden.omni.dev/v1/garden.schema.json",
+  "$schema": "https://garden.omni.dev/garden.schema.json",
   "version": "1.0.0",
   "core": {
     "name": "My Garden",
@@ -47,7 +46,7 @@ v1/
 ## Validation
 
 ```bash
-npx ajv validate -s v1/garden.schema.json -d examples/minimal.json
+npx ajv validate -s garden.schema.json -d examples/minimal.json
 ```
 
 ## License
