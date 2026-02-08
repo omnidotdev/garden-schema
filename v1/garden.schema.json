@@ -16,23 +16,23 @@
     },
     "core": {
       "$ref": "slices/core.schema.json",
-      "description": "Core identity"
+      "description": "Core garden identity and metadata (required)"
     },
     "sprouts": {
       "$ref": "slices/sprouts.schema.json",
-      "description": "Products and services"
+      "description": "Products and services in the garden"
     },
     "maintainers": {
       "$ref": "slices/maintainers.schema.json",
-      "description": "Garden maintainers"
+      "description": "People who maintain the garden"
     },
     "theme": {
       "$ref": "slices/theme.schema.json",
-      "description": "Visual theming"
+      "description": "Visual theming for garden rendering"
     },
     "composition": {
       "$ref": "slices/composition.schema.json",
-      "description": "Garden hierarchy"
+      "description": "Garden hierarchy (subgardens, supergardens)"
     }
   },
   "required": ["version", "core"],

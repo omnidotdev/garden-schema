@@ -8,22 +8,22 @@
     "primaryColor": {
       "type": "string",
       "pattern": "^#[0-9A-Fa-f]{6}$",
-      "description": "Primary brand color"
+      "description": "Primary brand color (hex)"
     },
     "secondaryColor": {
       "type": "string",
       "pattern": "^#[0-9A-Fa-f]{6}$",
-      "description": "Secondary color"
+      "description": "Secondary color (hex)"
     },
     "backgroundColor": {
       "type": "string",
       "pattern": "^#[0-9A-Fa-f]{6}$",
-      "description": "Background color"
+      "description": "Background color (hex)"
     },
     "textColor": {
       "type": "string",
       "pattern": "^#[0-9A-Fa-f]{6}$",
-      "description": "Text color"
+      "description": "Text color (hex)"
     }
   },
   "additionalProperties": false

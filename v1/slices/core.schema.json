@@ -21,12 +21,12 @@
     "createdAt": {
       "type": "string",
       "format": "date-time",
-      "description": "Creation timestamp"
+      "description": "Creation timestamp (ISO 8601)"
     },
     "updatedAt": {
       "type": "string",
       "format": "date-time",
-      "description": "Last updated timestamp"
+      "description": "Last updated timestamp (ISO 8601)"
     }
   },
   "required": ["name"],
