@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://garden.omni.dev/v1/slices/composition.schema.json",
+  "title": "Composition Slice",
+  "description": "Garden hierarchy via subgardens and supergardens",
+  "type": "object",
+  "properties": {
+    "subgardens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gardenRef"
+      },
+      "description": "Gardens nested within this garden"
+    },
+    "supergardens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gardenRef"
+      },
+      "description": "Gardens that contain this garden"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "gardenRef": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Garden name"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the garden's schema file or homepage"
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    }
+  }
+}
