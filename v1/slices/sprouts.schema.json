@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://garden.omni.dev/v1/slices/sprouts.schema.json",
+  "title": "Sprouts Slice",
+  "description": "Products and services in the garden",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/sprout"
+  },
+  "$defs": {
+    "sprout": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Sprout name"
+        },
+        "homepageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Homepage URL"
+        },
+        "description": {
+          "type": "string",
+          "description": "Sprout description"
+        },
+        "logo": {
+          "type": "string",
+          "format": "uri",
+          "description": "Logo image URL"
+        },
+        "repoUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Source code repository URL"
+        },
+        "projectUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Project management URL"
+        },
+        "twitter": {
+          "type": "string",
+          "description": "Twitter/X handle"
+        }
+      },
+      "required": ["name", "homepageUrl"],
+      "additionalProperties": false
+    }
+  }
+}
