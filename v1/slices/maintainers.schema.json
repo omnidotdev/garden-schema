@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://garden.omni.dev/v1/slices/maintainers.schema.json",
+  "title": "Maintainers Slice",
+  "description": "People who maintain the garden",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/maintainer"
+  },
+  "$defs": {
+    "maintainer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Maintainer name"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Personal URL"
+        }
+      },
+      "required": ["name"],
+      "additionalProperties": false
+    }
+  }
+}
