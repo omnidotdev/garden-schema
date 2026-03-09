@@ -44,7 +44,7 @@
           "description": "Twitter/X handle"
         }
       },
-      "required": ["name", "homepageUrl"],
+      "required": ["name"],
       "additionalProperties": false
     }
   }
